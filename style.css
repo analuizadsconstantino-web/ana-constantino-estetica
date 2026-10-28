@@ -268,3 +268,44 @@ body{background:var(--paper);color:var(--ink);font-size:14px;line-height:1.8}
  .price strong{font-size:19px}
  .price span{letter-spacing:0}
 }
+
+
+/* Procedimentos: vitrine premium mais atraente e orientada ao agendamento */
+.services{background:#f5eee6;padding-top:clamp(70px,8vw,108px);padding-bottom:clamp(75px,9vw,120px)}
+.section-heading{max-width:1040px;margin-bottom:38px}
+.section-heading:after{content:"";display:block;width:54px;height:2px;background:#b99a7c;margin-top:25px}
+.section-intro{font-size:13px;max-width:620px;line-height:1.9}
+.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border-top:0;max-width:1040px}
+.service-card{position:relative;display:flex;flex-direction:column;min-height:310px;padding:0;background:#fcfaf7;border:1px solid #e2d3c5;box-shadow:0 8px 22px #3e281e08;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.service-card:before{content:"";height:4px;background:#76543f;display:block;width:100%;transition:background .25s}
+.service-card:nth-child(2):before{background:#b99a7c}
+.service-card:nth-child(3):before{background:#9d8067}
+.service-card:nth-child(4):before{background:#5b4030}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px #3e281e15;border-color:#c9b29e;background:#fffdfa}
+.service-number{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:23px 26px 0;background:transparent;border:0}
+.service-number>span{font-family:var(--sans);font-size:9px;letter-spacing:.2em;color:#94745a}
+.service-number:after{content:"ATENDIMENTO PERSONALIZADO";font-size:8px;letter-spacing:.13em;color:#9b8878}
+.service-info{flex:1;padding:12px 26px 24px;display:flex;flex-direction:column;align-items:stretch}
+.service-info h3{font-family:var(--serif);font-size:clamp(24px,2.5vw,31px);letter-spacing:-.025em;line-height:1.2;margin:0 0 12px;color:#3e281e}
+.service-info p{font-size:12px;line-height:1.9;color:#79695d;max-width:430px;min-height:68px;margin:0 0 20px;flex:1}
+.price{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:15px 0 13px;margin-top:auto;border-top:1px solid #e5d8cb;border-bottom:0}
+.price span{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#927153}
+.price strong{font-family:var(--serif);font-size:30px;line-height:1;color:#5b3c2a}
+.service-info>a{max-width:none;display:flex;align-items:center;justify-content:space-between;margin:0;padding:14px 16px;background:#4b3025;color:#fff8f1;border:1px solid #4b3025;font-size:9px;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s,transform .2s}
+.service-info>a:hover{background:#ead8c8;color:#3e281e;transform:translateY(-2px)}
+.service-info>a span{font-size:16px}
+.disclaimer{max-width:1040px;padding-top:5px;font-size:10px;line-height:1.8;color:#8d7b6c}
+@media(max-width:760px){
+ .services{padding-top:62px;padding-bottom:70px}
+ .section-heading{margin-bottom:28px}
+ .service-grid{grid-template-columns:1fr;gap:14px}
+ .service-card{min-height:0}
+ .service-number{padding:20px 20px 0}
+ .service-number:after{font-size:7px;letter-spacing:.1em}
+ .service-info{padding:12px 20px 20px}
+ .service-info h3{font-size:26px}
+ .service-info p{min-height:0;font-size:11px;margin-bottom:15px}
+ .price{padding:13px 0}
+ .price strong{font-size:28px}
+ .service-info>a{padding:14px}
+}
