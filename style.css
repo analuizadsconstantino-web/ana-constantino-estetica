@@ -309,3 +309,9 @@ body{background:var(--paper);color:var(--ink);font-size:14px;line-height:1.8}
  .price strong{font-size:28px}
  .service-info>a{padding:14px}
 }
+
+
+/* Endereço e acesso ao mapa claramente visíveis no rodapé de contato */
+.location-card{cursor:pointer}
+.location-card .map-cta{grid-column:2;display:inline-flex;align-items:center;justify-content:center;justify-self:start;margin-top:12px;padding:10px 13px;background:#4b3025;color:#fff8f1;font-size:9px;letter-spacing:.07em;text-transform:uppercase;line-height:1.4}
+.location-card:hover .map-cta{background:#ead8c8;color:#3e281e}
