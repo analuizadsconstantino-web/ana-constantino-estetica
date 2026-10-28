@@ -138,3 +138,18 @@ img{background:#e9ded3}
 .button:hover,.service-info>a:hover{transform:translateY(-2px)}
 @media(max-width:900px){.about{grid-template-columns:.8fr 1.2fr;gap:5%}.about-monogram{min-height:430px}.service-grid{grid-template-columns:1fr}.homecare{grid-template-columns:.8fr 1.2fr}.homecare-manifesto{min-height:520px;padding:30px 22px}.manifesto-index{top:38px;left:38px}}
 @media(max-width:680px){.about{grid-template-columns:1fr;gap:36px}.about-monogram{min-height:320px;max-width:390px}.monogram-script{font-size:115px}.service-grid{grid-template-columns:1fr;gap:14px}.service-card{grid-template-columns:66px minmax(0,1fr);min-height:0}.service-number{padding:23px 6px}.service-number>span{font-size:27px}.service-number i{height:42px;margin-top:18px}.service-info{padding:21px 18px}.service-info h3{font-size:23px}.service-info p{font-size:11px}.homecare{grid-template-columns:1fr}.homecare-manifesto{min-height:340px}.manifesto-ornament{width:112px;height:112px;margin-bottom:22px}.homecare-manifesto>p{font-size:31px}.manifesto-index{top:37px;left:37px}.homecare-copy{padding:48px 7%}}
+
+
+/* Ajuste solicitado: remover completamente os painéis decorativos */
+.about{grid-template-columns:minmax(0,1fr);gap:0}
+.about-monogram{display:none!important}
+.about-copy{max-width:850px;margin:0 auto;width:100%}
+.homecare{display:block;background:linear-gradient(120deg,#4b3025,#67442e)}
+.homecare-manifesto{display:none!important}
+.homecare-copy{max-width:1000px;margin:0 auto;padding:clamp(44px,7vw,90px) clamp(22px,8vw,128px)}
+@media(max-width:680px){
+ .about{grid-template-columns:minmax(0,1fr)}
+ .about-copy{width:100%}
+ .homecare{display:block}
+ .homecare-copy{padding:48px 7%}
+}
