@@ -98,3 +98,43 @@ img{background:#e9ded3}
  .footer{padding:30px 6% 22px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+
+/* Identidade editorial sem fotografias: tipografia, respiro e detalhes de marca */
+.about{grid-template-columns:.78fr 1.22fr;gap:clamp(40px,8vw,120px)}
+.about-monogram{position:relative;min-height:490px;max-width:460px;width:100%;justify-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid #c9a98e66;background:radial-gradient(ellipse at center,#76543f 0%,#553726 52%,#4b3025 100%);overflow:hidden}
+.about-monogram:before,.about-monogram:after{content:"";position:absolute;width:76%;height:76%;border:1px solid #ead8c826;border-radius:50%;transform:rotate(-24deg)}
+.about-monogram:after{width:62%;height:84%;transform:rotate(24deg)}
+.monogram-script{font-family:"Parisienne",cursive;font-size:clamp(110px,15vw,180px);line-height:1;color:#ead8c8;position:relative;z-index:1;text-shadow:0 12px 30px #24140d35}
+.monogram-rule{width:64px;height:1px;background:#c9a98e;margin:26px 0 17px;position:relative;z-index:1}
+.about-monogram>small{font-size:9px;letter-spacing:.3em;line-height:2;color:#ead8c8;position:relative;z-index:1}
+.monogram-caption{position:absolute;bottom:22px;font-size:8px;letter-spacing:.2em;color:#c9a98e}
+.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.service-card{display:grid;grid-template-columns:90px minmax(0,1fr);align-items:stretch;background:#fffdfa;border:1px solid #dfcbbb;box-shadow:0 12px 34px #4b302508;min-height:255px}
+.service-number{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:28px 10px;background:linear-gradient(160deg,#f1e4d8,#e8d6c5);border-right:1px solid #dfcbbb;position:relative;overflow:hidden}
+.service-number>span{font-family:var(--serif);font-size:34px;font-weight:400;color:#98745d;line-height:1}
+.service-number i{width:1px;height:62px;background:#c9a98e;margin-top:22px;position:relative}
+.service-number i:after{content:"";position:absolute;width:7px;height:7px;border:1px solid #98745d;border-radius:50%;left:-3px;bottom:-1px;background:#f1e4d8}
+.service-info{padding:26px 25px;display:flex;flex-direction:column;align-items:stretch}
+.service-info h3{font-size:clamp(21px,2vw,27px);margin-bottom:12px}
+.service-info p{min-height:0;flex:1;font-size:12px;line-height:1.85;margin-bottom:18px}
+.service-info>a{margin-top:17px;padding-top:14px;border-top:1px solid #dfcbbb;font-size:11px;letter-spacing:.02em}
+.service-info>a span{font-size:16px}
+.disclaimer{max-width:760px;margin:28px auto 0;text-align:center;line-height:1.8}
+.homecare{grid-template-columns:.8fr 1.2fr;align-items:stretch}
+.homecare-manifesto{min-height:600px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:50px 30px;background:linear-gradient(145deg,#ead8c8,#d8bda6);color:#4b3025;overflow:hidden}
+.homecare-manifesto:before{content:"";position:absolute;inset:26px;border:1px solid #67442e55;pointer-events:none}
+.manifesto-index{position:absolute;top:50px;left:50px;font-size:9px;letter-spacing:.2em;color:#805b43}
+.manifesto-ornament{width:160px;height:160px;position:relative;display:grid;place-items:center;margin-bottom:34px}
+.manifesto-ornament:before,.manifesto-ornament:after{content:"";position:absolute;inset:8px;border:1px solid #98745d;border-radius:50%;transform:rotate(35deg) scaleX(.6)}
+.manifesto-ornament:after{transform:rotate(-35deg) scaleX(.6)}
+.manifesto-ornament span{position:absolute;width:1px;height:100%;background:#98745d44}
+.manifesto-ornament span:nth-child(2){transform:rotate(60deg)}
+.manifesto-ornament span:nth-child(3){transform:rotate(-60deg)}
+.homecare-manifesto>p{font-family:var(--serif);font-size:clamp(29px,3.3vw,43px);line-height:1.25;margin:0;position:relative;z-index:1}
+.homecare-manifesto>small{font-size:8px;letter-spacing:.18em;margin-top:28px;color:#805b43}
+.homecare-copy{padding:clamp(44px,6vw,86px)}
+.button,.nav-cta,.service-info>a,.contact-card{transition:all .22s ease}
+.button:hover,.service-info>a:hover{transform:translateY(-2px)}
+@media(max-width:900px){.about{grid-template-columns:.8fr 1.2fr;gap:5%}.about-monogram{min-height:430px}.service-grid{grid-template-columns:1fr}.homecare{grid-template-columns:.8fr 1.2fr}.homecare-manifesto{min-height:520px;padding:30px 22px}.manifesto-index{top:38px;left:38px}}
+@media(max-width:680px){.about{grid-template-columns:1fr;gap:36px}.about-monogram{min-height:320px;max-width:390px}.monogram-script{font-size:115px}.service-grid{grid-template-columns:1fr;gap:14px}.service-card{grid-template-columns:66px minmax(0,1fr);min-height:0}.service-number{padding:23px 6px}.service-number>span{font-size:27px}.service-number i{height:42px;margin-top:18px}.service-info{padding:21px 18px}.service-info h3{font-size:23px}.service-info p{font-size:11px}.homecare{grid-template-columns:1fr}.homecare-manifesto{min-height:340px}.manifesto-ornament{width:112px;height:112px;margin-bottom:22px}.homecare-manifesto>p{font-size:31px}.manifesto-index{top:37px;left:37px}.homecare-copy{padding:48px 7%}}
