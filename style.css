@@ -315,3 +315,114 @@ body{background:var(--paper);color:var(--ink);font-size:14px;line-height:1.8}
 .location-card{cursor:pointer}
 .location-card .map-cta{grid-column:2;display:inline-flex;align-items:center;justify-content:center;justify-self:start;margin-top:12px;padding:10px 13px;background:#4b3025;color:#fff8f1;font-size:9px;letter-spacing:.07em;text-transform:uppercase;line-height:1.4}
 .location-card:hover .map-cta{background:#ead8c8;color:#3e281e}
+
+
+/* Direção de arte premium — editorial, sóbria e consistente */
+:root{--brown:#4b3025;--brown2:#38231b;--mid:#82634d;--copper:#b99a7c;--nude:#ead8c8;--cream:#f8f2eb;--paper:#fcf9f5;--ink:#30231d;--muted:#78685c;--line:#dfcdbd}
+body{background:#fcf9f5;color:#33251d;letter-spacing:.005em}
+.header{min-height:78px;background:#38231b;padding-inline:clamp(22px,7vw,110px);border-bottom:1px solid #b99a7c55;box-shadow:0 7px 25px #20120b18}
+.brand-name{font-size:13px;letter-spacing:.19em}
+.nav{gap:clamp(14px,2.2vw,30px);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.nav a{color:#f8f2ebd9}
+.nav .nav-cta{border-color:#b99a7c;padding:11px 16px}
+.nav .nav-cta:hover{background:#ead8c8;color:#38231b}
+.about{display:grid;grid-template-columns:minmax(270px,.82fr) minmax(0,1.18fr);gap:clamp(35px,7vw,100px);align-items:center;padding:clamp(70px,9vw,120px) clamp(24px,9vw,140px);background:linear-gradient(125deg,#38231b 0%,#4b3025 100%)}
+.about-monogram{min-height:490px;max-width:460px;width:100%;padding:42px;justify-self:center;align-items:flex-start;text-align:left;border:1px solid #b99a7c80;background:linear-gradient(155deg,#59402f 0%,#432b20 100%);overflow:hidden}
+.about-monogram:before,.about-monogram:after{display:none}
+.hero-kicker{font-size:8px;letter-spacing:.23em;line-height:1.8;color:#cbb49e;position:relative;z-index:1}
+.hero-statement{font-family:var(--serif);font-size:clamp(42px,5vw,66px);font-weight:400;line-height:1.1;letter-spacing:-.04em;color:#fbf5ef;margin-top:auto;position:relative;z-index:1}
+.hero-statement em{font-weight:400;color:#d9bda3}
+.hero-line{height:1px;width:58px;background:#b99a7c;margin:25px 0 16px;position:relative;z-index:1}
+.hero-caption{font-size:8px;letter-spacing:.16em;line-height:1.8;color:#d5c0ae;position:relative;z-index:1}
+.about-copy{max-width:690px;margin:0}
+.about .eyebrow{font-size:9px;letter-spacing:.22em;color:#c9a98e}
+.about h1{font-size:clamp(42px,4.8vw,68px);line-height:1.04;letter-spacing:-.045em}
+.about h1 em{color:#d9bda3}
+.role{font-size:9px;letter-spacing:.2em;color:#d9bda3}
+.about-copy>p:not(.eyebrow):not(.role):not(.about-extra){font-size:12px;line-height:2;color:#e5d9ce}
+.qualifications{gap:0 22px;margin:27px 0}
+.qualifications>div{padding:14px 0}
+.qualifications strong{font-size:12px;line-height:1.65}
+.button{min-height:48px;padding:15px 19px;background:#ead8c8;border:1px solid #ead8c8;color:#38231b;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.button:hover{background:transparent;color:#fbf5ef}
+.trust-strip{background:#f0e5da;padding:26px clamp(24px,9vw,140px);gap:25px}
+.trust-strip strong{font-family:var(--serif);font-size:16px}
+.trust-strip small{font-size:10px;line-height:1.6}
+.services{padding:clamp(70px,8vw,110px) clamp(24px,9vw,140px);background:#fcf9f5}
+.section-heading{max-width:1000px;margin-bottom:42px}
+.section-heading .eyebrow,.contact-heading .eyebrow{font-size:9px;letter-spacing:.23em;color:#8c6a4f}
+.section-heading h2,.contact h2{font-size:clamp(40px,5.3vw,68px);line-height:1.05;letter-spacing:-.045em}
+.section-heading h2 em{color:#9a785d}
+.section-heading:after{margin-top:24px;width:48px;background:#b99a7c}
+.section-intro{font-size:12px;line-height:2;color:#78685c}
+.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1000px}
+.service-card{min-height:0;background:#fffdfa;border:1px solid #e4d6c9;box-shadow:0 8px 28px #38231b08;transition:transform .25s,box-shadow .25s,border-color .25s}
+.service-card:before{height:3px;background:#4b3025}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px #38231b12;border-color:#c8ad96}
+.service-number{padding:22px 23px 0}
+.service-number:after{font-size:7px;letter-spacing:.12em;color:#9a806a}
+.service-info{padding:12px 23px 22px}
+.service-info h3{font-size:clamp(24px,2.6vw,31px);line-height:1.2;color:#4b3025}
+.service-info p{font-size:11px;line-height:1.85;color:#78685c;min-height:54px}
+.price{border-top:1px solid #e6d9cd;padding:14px 0 13px}
+.price span{font-size:8px;letter-spacing:.13em;color:#8c6a4f}
+.price strong{font-size:30px;color:#4b3025}
+.service-info>a{padding:13px 14px;background:#4b3025;border-color:#4b3025;color:#fff8f1;font-size:8px;letter-spacing:.13em}
+.service-info>a:hover{background:#ead8c8;color:#38231b;transform:translateY(-1px)}
+.disclaimer{max-width:1000px;margin:22px auto 0;font-size:10px;line-height:1.8;color:#89786b}
+.homecare{display:block;background:#38231b;padding:0 clamp(24px,9vw,140px)}
+.homecare-manifesto{max-width:1000px;margin:0 auto;min-height:310px;padding:45px 0 0;align-items:flex-start;justify-content:center;border-bottom:1px solid #b99a7c55;background:transparent}
+.manifesto-index{font-size:8px;letter-spacing:.22em;color:#c9a98e}
+.manifesto-ornament{display:none}
+.homecare-manifesto>p{font-family:var(--serif);font-size:clamp(34px,5vw,58px);line-height:1.12;letter-spacing:-.035em;color:#f8f2eb;margin:22px 0}
+.homecare-manifesto>small{font-size:8px;letter-spacing:.18em;color:#c9a98e}
+.homecare-copy{max-width:1000px;padding:clamp(55px,7vw,88px) 0 clamp(70px,8vw,105px)}
+.homecare h2{font-size:clamp(39px,5.2vw,65px);line-height:1.08;max-width:800px}
+.homecare-copy>p:not(.eyebrow):not(.homecare-note){font-size:12px;line-height:2;max-width:740px}
+.homecare li{padding:17px 0}
+.homecare li strong{font-size:12px}
+.homecare li small{font-size:10px;line-height:1.8}
+.contact{padding:clamp(70px,8vw,110px) clamp(24px,9vw,140px);background:#f0e5da}
+.contact-heading{max-width:1000px}
+.contact h2{color:#4b3025}
+.contact-grid{max-width:1000px;gap:0 30px}
+.contact-card{padding:23px 10px;grid-template-columns:100px minmax(0,1fr);transition:background .2s}
+.contact-card:hover{background:#e9d9ca}
+.contact-card strong{font-size:12px}
+.location-card .map-cta{grid-column:2;justify-self:start;margin-top:9px;padding:10px 12px;background:#4b3025;color:#fff8f1;font-size:8px;letter-spacing:.1em}
+.location-card:hover .map-cta{background:#ead8c8;color:#38231b}
+.footer{background:#281a13;padding:36px 6% 25px}
+.whatsapp-float{width:52px;height:52px;background:#4e6949;border:2px solid #fcf9f5;box-shadow:0 8px 24px #20130d35}
+@media(max-width:850px){
+ .about{grid-template-columns:1fr;gap:42px}
+ .about-monogram{min-height:330px;max-width:100%;padding:30px}
+ .hero-statement{font-size:clamp(43px,8vw,62px)}
+ .about-copy{max-width:100%}
+}
+@media(max-width:760px){
+ .header{height:70px;min-height:70px;padding:10px 5%}
+ .nav{top:69px;background:#38231b}
+ .section{padding:60px 6%}
+ .about{padding-top:50px;padding-bottom:58px}
+ .about-monogram{min-height:300px;padding:27px}
+ .hero-kicker{font-size:7px}
+ .hero-statement{font-size:clamp(42px,11vw,56px)}
+ .about h1{font-size:clamp(40px,10vw,52px)}
+ .trust-strip{padding:23px 7%;gap:17px}
+ .services{padding-top:62px;padding-bottom:68px}
+ .service-grid{grid-template-columns:1fr;gap:13px}
+ .service-number{padding:20px 20px 0}
+ .service-info{padding:12px 20px 20px}
+ .service-info h3{font-size:27px}
+ .service-info p{min-height:0;font-size:11px}
+ .price strong{font-size:28px}
+ .homecare{padding:0 6%}
+ .homecare-manifesto{min-height:260px;padding-top:35px}
+ .homecare-copy{padding:48px 0 58px}
+ .homecare h2{font-size:clamp(39px,10vw,51px)}
+ .contact{padding:62px 6%}
+ .contact-grid{grid-template-columns:1fr}
+ .contact-card{grid-template-columns:90px minmax(0,1fr);padding:20px 5px}
+ .location-card .map-cta{grid-column:2}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
