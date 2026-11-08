@@ -474,3 +474,25 @@ body{font-size:16px;line-height:1.75}
  .contact-card>span:last-child{font-size:12px}
  .hero-kicker,.hero-caption{font-size:8px}
 }
+
+
+/* Legibilidade ampliada — segunda revisão */
+@media(min-width:761px){
+ .service-info h3{font-size:clamp(29px,3vw,36px)}
+ .service-info p{font-size:16px;line-height:1.9}
+ .price strong{font-size:36px}
+ .price span{font-size:11px}
+ .service-info>a{font-size:11px;padding:16px 18px}
+ .service-number>span{font-size:11px}
+ .service-number:after{font-size:9px}
+}
+@media(max-width:760px){
+ .service-info h3{font-size:30px}
+ .service-info p{font-size:15px;line-height:1.9}
+ .price strong{font-size:33px}
+ .price span{font-size:11px}
+ .service-info>a{font-size:10px;padding:16px 15px;letter-spacing:.09em}
+ .service-number>span{font-size:11px}
+ .service-number:after{font-size:8px}
+ .section-intro{font-size:15px}
+}
