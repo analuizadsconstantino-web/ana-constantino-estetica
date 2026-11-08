@@ -426,3 +426,51 @@ body{background:#fcf9f5;color:#33251d;letter-spacing:.005em}
  .location-card .map-cta{grid-column:2}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+
+
+/* Ajuste de legibilidade: tipografia ampliada sem alterar a identidade visual */
+body{font-size:16px;line-height:1.75}
+.nav{font-size:11px}
+.about .eyebrow,.section-heading .eyebrow,.contact-heading .eyebrow{font-size:10px}
+.role{font-size:11px}
+.about-copy>p:not(.eyebrow):not(.role):not(.about-extra){font-size:15px;line-height:1.95}
+.qualifications span{font-size:9px}
+.qualifications strong{font-size:15px;line-height:1.55}
+.hero-kicker,.hero-caption{font-size:9px}
+.hero-statement{font-size:clamp(48px,5.2vw,70px)}
+.trust-strip strong{font-size:18px}
+.trust-strip small{font-size:12px}
+.section-intro{font-size:14px;line-height:1.9}
+.service-info h3{font-size:clamp(25px,2.8vw,32px)}
+.service-info p{font-size:14px;line-height:1.85}
+.price span{font-size:10px}
+.price strong{font-size:32px}
+.service-info>a{font-size:10px}
+.disclaimer{font-size:12px}
+.homecare-manifesto>p{font-size:clamp(38px,5.2vw,62px)}
+.homecare-copy>p:not(.eyebrow):not(.homecare-note){font-size:14px;line-height:1.95}
+.homecare li strong{font-size:14px}
+.homecare li small{font-size:12px;line-height:1.8}
+.homecare-note{font-size:12px!important}
+.contact-heading>p:last-child{font-size:14px}
+.contact-card small{font-size:9px}
+.contact-card strong{font-size:14px}
+.contact-card>span:last-child{font-size:12px}
+.footer>p{font-size:12px}
+.footer>small{font-size:10px}
+@media(max-width:760px){
+ .about-copy>p:not(.eyebrow):not(.role):not(.about-extra){font-size:14px}
+ .qualifications strong{font-size:14px}
+ .trust-strip strong{font-size:17px}
+ .trust-strip small{font-size:12px}
+ .service-info h3{font-size:27px}
+ .service-info p{font-size:13px}
+ .price span{font-size:10px}
+ .price strong{font-size:30px}
+ .homecare-copy>p:not(.eyebrow):not(.homecare-note){font-size:14px}
+ .homecare li strong{font-size:14px}
+ .homecare li small{font-size:12px}
+ .contact-card strong{font-size:14px}
+ .contact-card>span:last-child{font-size:12px}
+ .hero-kicker,.hero-caption{font-size:8px}
+}
